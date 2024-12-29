@@ -17,7 +17,7 @@ echo $blogVer->getComentario();
 echo "</div>";
 if ($blogVer->getImagen()!=""){
 
-	echo"<img src='../imagenes";
+	echo"<img src='../imagenes/";
 	echo $blogVer->getImagen()."'width='300px' heigth='200px'/>";
 }
 echo"<br>";
