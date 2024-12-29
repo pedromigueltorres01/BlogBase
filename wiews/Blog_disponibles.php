@@ -1,8 +1,9 @@
 <?php
 include('../model/Manejo_objeto.php');
 try {
-	$conexion=new PDO('mysql:host=localhos; dbname=dbblog', root,'');
-	$conexion=setAttribute(PDO:: ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$conexion=new PDO('mysql:host=localhost; dbname=dbblog', 'root','');
+	$conexion->setAttribute(PDO:: ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$conexion->exec("SET CHARACTER SET "."utf8");
 	$Manejo_objeto=new Manejo_objeto($conexion);
 	$datos=$Manejo_objeto->getContenidoPorFecha();
 	if(empty($datos)){
@@ -17,7 +18,7 @@ echo "</div>";
 if ($blogVer->getImagen()!=""){
 
 	echo"<img src='../imagenes";
-	echo $blogVer->getImagen()."'width='300px' heigth='200px"/>;
+	echo $blogVer->getImagen()."'width='300px' heigth='200px'/>";
 }
 echo"<br>";
 		}
