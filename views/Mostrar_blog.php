@@ -53,7 +53,7 @@
                         <h4 class='text-success'>".$fila->getFecha()."</h4>
                         <div class='lead'>".$fila->getComentario()."</div>";
                 if ($fila->getImagen() != "") {
-                    echo "<img class='img-fluid' src='imagenes/".$fila->getImagen()."' width='300px' height='200px'/>";
+                    echo "<img class='img-fluid' src='../imagenes/".$fila->getImagen()."' width='300px' height='200px'/>";
                 }
                 echo "</div></div>";
             }
@@ -69,9 +69,9 @@
 
     <br/>
     <div class="container text-center">
-        <a href="views/Formulario.php" class="btn btn-primary">Volver a Insertar Blog</a>
+        <a href="Formulario.php" class="btn btn-primary">Volver a Insertar Blog</a>
     </div>
 
-    <script src="resource/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../resource/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
