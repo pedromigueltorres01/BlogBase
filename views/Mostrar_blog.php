@@ -35,7 +35,7 @@
 </head>
 <body>
     <?php 
-    include_once("../model/Manejo_objeto.php");
+    include("../model/Manejo_objeto.php");
     try {
         $conexion = new PDO('mysql:host=localhost; dbname=dbblog', 'root', '');
         $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
