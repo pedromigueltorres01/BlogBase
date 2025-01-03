@@ -37,7 +37,14 @@ include('../model/Manejo_objeto.php');
         }
     </style>
 </head>
-<body>
+<body> 
+    <div>
+        hhhhhh
+    <?php
+    // Menu
+       require_once('layouts/menu.php');
+    ?>
+    </div>
     <div class="container">
         <?php
         try {

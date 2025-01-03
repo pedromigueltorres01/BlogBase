@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Blog</title>
     <!-- Enlace a Bootstrap CSS local -->
-    <link rel="stylesheet" href="resource/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <style>
         body {
             background-color: #1c1c1c; /* Fondo negro */
@@ -34,6 +34,11 @@
     </style>
 </head>
 <body>
+   <div>
+    <?php
+    // Menu
+       require_once('layouts/menu.php');
+    ?>
     <?php 
     include("../model/Manejo_objeto.php");
     try {

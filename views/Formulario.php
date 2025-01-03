@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Píldoras</title>
-    <link rel="stylesheet" href="resource/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <style>
         body {
             background-color: #1c1c1c; /* Fondo negro */
@@ -58,6 +58,12 @@
 </head>
 
 <body>
+    <div>
+    <?php
+    // Menu
+       require_once('layouts/menu.php');
+    ?>
+    </div>
     <h2>Nueva entrada</h2>
     <form action="../controller/transacciones.php" method="post" enctype="multipart/form-data" name="form1">
         <table class="form-table">
@@ -93,6 +99,6 @@
         </table>
     </form>
     <p>&nbsp;</p>
-    <script src="resource/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../resource/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
