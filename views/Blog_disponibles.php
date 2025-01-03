@@ -39,7 +39,6 @@ include('../model/Manejo_objeto.php');
 </head>
 <body> 
     <div>
-        hhhhhh
     <?php
     // Menu
        require_once('layouts/menu.php');
@@ -56,17 +55,19 @@ include('../model/Manejo_objeto.php');
             if (empty($datos)) {
                 echo '<div class="alert alert-warning" role="alert">No hay blog creados.</div>';
             } else {
+                echo "<div class='container'>";
                 foreach ($datos as $blogVer) {
-                    echo "<div class='card'>";
+                    echo "<div class='card mb-4'>";
                     echo "<div class='card-body'>";
-                    echo "<h3 class='card-title'>". htmlspecialchars($blogVer->getTitulo()) ."</h3>";
+                    echo "<h1 class='card-title mt-4'>". htmlspecialchars($blogVer->getTitulo()) ."</h3>";
                     echo "<h4 class='text-success'>". htmlspecialchars($blogVer->getFecha()) ."</h4>";
-                    echo "<div class='card-text'>". htmlspecialchars($blogVer->getComentario()) ."</div>";
+                    echo "<div class='lead'>". htmlspecialchars($blogVer->getComentario()) ."</div>";
                     if ($blogVer->getImagen() != "") {
                         echo "<img src='../imagenes/". htmlspecialchars($blogVer->getImagen()) ."' class='img-fluid' width='300px' height='200px'/>";
                     }
                     echo "</div></div>";
                 }
+                echo "</div>";
             }
         } catch (Exception $e) {
             die('Error: '. $e->getMessage());
