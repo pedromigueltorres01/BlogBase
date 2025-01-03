@@ -71,7 +71,6 @@
     <footer class="text-center py-3">
         <p class="mb-0">© 2024 Mi Blog. Todos los derechos reservados.</p>
     </footer>
-
     <br/>
     <div class="container text-center">
         <a href="Formulario.php" class="btn btn-primary">Volver a Insertar Blog</a>
